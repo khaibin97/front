@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Build User Interface Assignment 1">
+  <meta name="author" content="Andrew Schoen, Jeff Ma">
+  <title>Assignment 1: JS</title>
+  <!--Hidden style sheet: Uncomment the below section to make the file a bit prettier-->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family:'Open Sans', sans-serif;
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Assignment 1: JS -
+        <i>An adventure in javascript</i>
+      </h1>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <!-- Part 1 -->
+    <div>
+      <h2>Part 1: Hello World</h2>
+
+      <p>
+        Let's start simple. When the button below is pressed, print "Hello World!" to the console.
+      </p>
+
+      <form>
+        <button type="submit" formaction='javascript:p1();'>
+          Button 1
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 2 -->
+    <div>
+      <h2>Part 2: Print Me</h2>
+
+      <p>
+        Find the hidden element here -> (
+        <span id="p2readme" style="display:none;">Print me!</span>
+        ) and print the text contents of the hidden element to the console.
+      </p>
+
+      <form>
+        <button type="submit" formaction='javascript:p2();'>
+          Button 2
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 3 -->
+    <div>
+      <h2>Part 3: Edit Me</h2>
+
+      <p>
+        Find all elements with class <code>p3editme</code> and edit their text to "I was changed!".
+      </p>
+
+      <ul>
+        <li class="p3editme">Item One</li>
+        <li class="p3editme">Item Two</li>
+        <li class="p3editme">Item Three</li>
+      </ul>
+
+      <form>
+        <button type="submit" formaction='javascript:p3();'>
+          Button 3
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 4 -->
+    <div>
+      <h2>Part 4: Change List</h2>
+
+      <p>
+        For this section, you should modify each entry in the list such that the next letter in the alphabet replaces it. In other words, A->B, B->C, C->D, ..., Z->A.
+      </p>
+
+      <ul>
+        <li class="p4editme">A</li>
+        <li class="p4editme">B</li>
+        <li class="p4editme">C</li>
+      </ul>
+
+      <form>
+        <button type="submit" formaction='javascript:p4();'>
+          Button 4
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 5 -->
+    <div>
+      <h2>Part 5: Print Input</h2>
+
+      <p>
+        For this section, you should read the value of the input field, and modify the element with id <code>p5editme</code> to the text in the field.
+      </p>
+
+      <form>
+        <code style="background-color: grey; color:white; padding: 5px" id="p5editme">
+          This text should be changed to the contents of the input field
+        </code>
+        <br/>
+
+        <input style="margin-top: 10px" id="p5input" type="text"></input>
+
+        <button type="submit" formaction='javascript:p5();'>
+          Button 5
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 6 -->
+    <div>
+      <h2>Part 6: Change Actions</h2>
+
+      <p>
+        For this section, you should swap the action paired with each button.
+      </p>
+
+      <form>
+        <button type="submit" formaction='javascript:p6();'>  Button 6
+        </button>
+        <button id="p6btn1" type="submit" formaction='javascript:p6fn1();'>
+          Button 6-1
+        </button>
+
+        <button id="p6btn2" type="submit" formaction='javascript:p6fn2();'>
+          Button 6-2
+        </button>
+      </form>
+    </div>
+
+    <!-- Part 7 -->
+    <div>
+      <h2>Part 7: Adding Styles</h2>
+      <p>For this section, you should apply the following styles to the given elements.</p>
+      <table id="p7table">
+        <tr class="header">
+          <th>Attribute</th>
+          <th>Attribute Type</th>
+          <th>background-color</th>
+          <th>color</th>
+          <th>text-align</th>
+          <th>width</th>
+          <th>box-shadow</th>
+          <th>border-collapse</th>
+          <th>border-bottom</th>
+          <th>padding</th>
+        </tr>
+
+        <tr>
+          <td>p7table</td>
+          <td>id</td>
+          <td>#f7f7f7</td>
+          <td></td>
+          <td>center</td>
+          <td>100%</td>
+          <td>0 4px 8px 0 #d7dbde</td>
+          <td>collapse</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>header</td>
+          <td>class</td>
+          <td>#d0d5d9</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>tr</td>
+          <td>tag</td>
+          <td></td>
+          <td>#3f4245</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>td</td>
+          <td>tag</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1px solid #ddd</td>
+          <td>15px</td>
+        </tr>
+
+        <tr>
+          <td>th</td>
+          <td>tag</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1px solid #ddd</td>
+          <td>15px</td>
+        </tr>
+      </table>
+      <form>
+        <button type="submit" formaction='javascript:p7();'>
+          Button 7
+        </button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><a href="#">Back to top</a></p>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+  </script>
+  <script src="hw1.js"></script>
+  <script>
+    function p6fn1() {
+      alert("Action 1");
+    };
+    function p6fn2() {
+      alert("Action 2");
+    };
+  </script>
+</body>
+
+</html>

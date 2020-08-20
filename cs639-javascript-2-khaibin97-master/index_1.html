@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+​
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mathias Strohkirch">
+  <title>Assignment 2: JS</title>
+  <link rel="stylesheet" href="styles_1.css">
+</head>
+​
+<body>
+  <header>
+    <nav>
+      <h1>Assignment 2: JS -
+        <i>Intermediate Javascript</i>
+      </h1>
+    </nav>
+  </header>
+​
+  <main role="main">
+​
+    <!-- Part 1 -->
+    <div>
+      <h2>Part 1: Buttons</h2>
+      <p>Give both of the following buttons distinct classes, and specify the classes in the css file to change the button styles. Set the color, background-color, width, and height property of both buttons. When either button is clicked, log a message to the console with a description of the button's style
+      <form>
+        <button class="p1b1" type="submit" formaction='javascript:p1Button1();'>Button 1</button>
+        <button class="p1b2" type="submit" formaction='javascript:p1Button2();'>Button 2</button>
+      </form>
+    </div>
+​
+    <!-- Part 2 -->
+    <div>
+      <h2>Part 2: Counter</h2>
+      <p>For this section, make the button add one to the count each time it is clicked. Change the following properties of the button's class:</p>
+      <ul>
+        <li>color: change the color to any color</li>
+        <li>background-color: change the background color to any color</li>
+        <li>width and height: make the button a square</li>
+        <li>border: the border property specifies the border thickness, type of border, and border-color. Specify each of these values(ex. border: 2px solid #555555;)</li>
+        <li>border-radius: change the border radius to give the button rounded corners</li>
+        <li>do not remove the transition durations. These will help us show the user when the mouse is over the button</li>
+      </ul>
+      <p>Change the color and background-color of the "button.rounded:hover" declaration in the css file</p>
+      <p>Also, change the size and color of the count field by giving it a class and specifying the class in the css file</p>
+      <p>Count:</p>
+      <p class="countDisplay" id="counter">0</p>
+      <form>
+        <button class="rounded" type="submit" formaction='javascript:p2();'>Increment</button>
+      </form>
+    </div>
+​
+    <!-- Part 3 -->
+    <div>
+      <h2>Part 3: Change styling by class</h2>
+      <p>For this section, create a paragraph tag and a button in the HTML file. Create two classes for the paragraph tag with different styles in the css file, and have the button switch the paragraph tag's class between these two classes. Also, have the button change the paragraph's text to tell the user which class is currently being displayed. Give the button a class and style it as desired</p>
+      <p class="ClassOne" style="display: block">ClassOne</p>
+      <p class="ClassTwo" style="display: none">ClassTwo</p>
+      <form>
+        <button class="changeClass" type="submit" formaction='javascript:p3();'>Change Me</button>
+      </form>
+      
+    </div>
+​
+    <!-- Part 4 -->
+    <div>
+      <h2>Part 4: Dynamic list</h2>
+      <p>For this section, add an element (li) to the list each time a button is clicked. All elements in the list should have the same class and styling.</p>
+      <p>When adding an element to the list, set the text randomly from a pre-defined list of 5-10 strings you define in the function</p>
+      <p>Each element should have a remove button, and each element should be removed from the list when its remove button is clicked</p>
+      <p>Change the button styling to any desired style</p>
+      <p>Change the list element's font-size, color, and padding properties</p>
+      <form>
+        <button class="addbutton" type="submit" formaction='javascript:p4NewAdd();'>Add element</button>
+      </form>
+      <ul class="listStyle" id="dynamicList">
+      </ul>
+    </div>
+​
+    <!-- FOOTER -->
+    <footer>
+      <p><a href="#">Back to top</a></p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="hw2_1.js"></script>
+</body>
+​
+</html>
